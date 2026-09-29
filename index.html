@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Player de Música</title>
+
+    <link rel="stylesheet" href="../AtividadeSom/style.css">
 </head>
+
 <body>
-    
+
+    <h1>Meu Player de Música</h1>
+
+    <div class="player">
+
+        <h2 id="nomeMusica">Escolha uma música</h2>
+        <p id="artista">Nenhuma música selecionada</p>
+
+        <audio id="audio" controls>
+            <source src="" type="audio/mpeg">
+        </audio>
+
+        <div class="musicas">
+
+            <div class="musica" onclick="tocarMusica(0)">
+                <h3>Musica 1</h3>
+                <p>Artista 1</p>
+            </div>
+
+            <div class="musica" onclick="tocarMusica(1)">
+                <h3>Musica 2</h3>
+                <p>Artista 2</p>
+            </div>
+
+            <div class="musica" onclick="tocarMusica(2)">
+                <h3>Musica 3</h3>
+                <p>Artista 3</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../AtividadeSom/script.js"></script>
 </body>
 </html>
