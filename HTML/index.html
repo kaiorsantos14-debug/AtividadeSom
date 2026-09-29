@@ -3,43 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Meu Player de Música</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Música</title>
 
-    <link rel="stylesheet" href="../AtividadeSom/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
 
-    <h1>Meu Player de Música</h1>
+    <h1>Minhas Músicas</h1>
 
-    <div class="player">
+    <div class="musicas">
 
-        <h2 id="nomeMusica">Escolha uma música</h2>
-        <p id="artista">Nenhuma música selecionada</p>
+        <div class="musica">
+            <h2>Música 1</h2>
+            <button onclick="tocar('../musicas/musica1.mp3')">Tocar</button>
+        </div>
 
-        <div id="youtube"></div>
+        <div class="musica">
+            <h2>Música 2</h2>
+            <button onclick="tocar('../musicas/musica2.mp3')">Tocar</button>
+        </div>
 
-        <div class="musicas">
-            <div class="musica" onclick="tocarMusica(0)">
-                <h3>Música 1</h3>
-                <p>Artista 1</p>
-            </div>
-
-            <div class="musica" onclick="tocarMusica(1)">
-                <h3>Música 2</h3>
-                <p>Artista 2</p>
-            </div>
-
-            <div class="musica" onclick="tocarMusica(2)">
-                <h3>Música 3</h3>
-                <p>Artista 3</p>
-            </div>
-
+        <div class="musica">
+            <h2>Música 3</h2>
+            <button onclick="tocar('../musicas/musica3.mp3')">Tocar</button>
         </div>
 
     </div>
 
-    <script src="../AtividadeSom/script.js"></script>
+    <audio id="audio" controls>
+        <source src="../musicas/musica1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../JS/script.js"></script>
 
 </body>
 
